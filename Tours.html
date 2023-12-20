@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>japan-travel.com - Japan travel guide</title>
+    <link rel="stylesheet" href="C:\Users\Administrator\.vscode\project iitu\css\Tours.css">
+   <link rel="shortcut icon" href="C:\Users\Administrator\.vscode\project iitu\images\favicon (2).ico" type="image/x-icon">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <a href="file:///C:/Users/Administrator/.vscode/project%20iitu/Home.html" class="logonav"><img src="C:\Users\Administrator\.vscode\project iitu\images\изображение_2023-12-14_223423957-transformed-removebg-preview.png"></a>
+        </div>
+        <ul class="menu">
+            <li><a href="file:///C:/Users/Administrator/.vscode/project%20iitu/Home.html" class="link">Home</a></li>
+            <li><a href="file:///C:/Users/Administrator/.vscode/project%20iitu/About.html" class="link">About</a></li>
+            <li><a href="file:///C:/Users/Administrator/.vscode/project%20iitu/Tours.html" class="link">Tours</a></li>
+            <div class="dropdown">
+                 <li><a href="file:///C:/Users/Administrator/.vscode/project%20iitu/Interests.html" class="link">Interests</a></li>
+                <div class="dropdown-content">
+                    <a href="C:\Users\Administrator\.vscode\project iitu\Destinations.html" class="link">Destinations</a>
+                    <a href="file:///C:/Users/Administrator/.vscode/project%20iitu/Blog.html" class="link">Blog</a>
+                    <a href="file:///C:/Users/Administrator/.vscode/project%20iitu/Regions.html" class="link">Regions</a>
+                </div>
+              </div>
+            <li><a href="file:///C:/Users/Administrator/.vscode/project%20iitu/Contact.html" class="link">Contact</a></li>
+        </ul>
+    </header>
+    <div class="imgjapan">
+        <img src="C:\Users\Administrator\.vscode\project iitu\images\1317759.jpeg" alt="imgjapan" height="650px" class="imgjapan">
+        </div>
+        <div class="Tours">
+            <h1>Tours</h1>
+            <hr>
+        <p>Tour packages are travel plans, which include some or all of the following: transportation, accommodation, meals, guided tours and more. They can be of great value to both, independent and group travelers.</p>
+        <p>Tour packages range from individual travel plans, which include only a train ticket and hotel reservation and leave everything else to the traveler, to fully guided tours which cover everything from airfare to English speaking guides and meals. Furthermore, there is a range of special interest tours, such as anime, hot spring, hiking or theme park tours.</p>
+        <p>Many companies inside and outside of Japan offer tour packages. Because the companies purchase tickets and hotel rooms in large bulks, they are able to offer the packages at costs far below the ones available to individual travelers, making tour packages an option worth considering by travelers of all budgets.</p>
+        <hr>
+        <h1>Tour Operators</h1>
+        <hr>
+        <div class="teamcontainer">
+          <div class="wrapper">
+              <div class="team">
+          <img src="C:\Users\Administrator\.vscode\project iitu\images\japantourcompany1_logo.png" >
+          </div>
+          <div class="text-box">
+              <h3>The Japan Tour Company</h3>
+              <p>Come experience Japan in a real and authentic way. Our small group tours and self-guided tours provide everything you could want at an affordable price! Join us in Japan today!</p>
+          </div>
+      </div>
+  </div>
+      <div class="wrapper">
+          <div class="team">
+          <img src="C:\Users\Administrator\.vscode\project iitu\images\japantourcompany2_logo.png" >
+          </div>
+          <div class="text-box">
+              <h3>Authentic Ise Walking Tours by Shō </h3>
+              <p>Allow certified guide and interpreter Shō to lead you to the Inner Shrine of Ise Jingu, the most revered Imperial Shinto shrine, and to the deepest parts of Japanese culture.</p>
+          </div>
+      </div>
+      <div class="wrapper">
+          <div class="team">
+          <img src="C:\Users\Administrator\.vscode\project iitu\images\japantourcompany3_logo.png" >
+          </div>
+          <div class="text-box">
+              <h3>Unseen Japan Tours - Your unique guided experience of Japan</h3>
+              <p>See the Japan that most tourists never glimpse. Our expert tour guides will craft a unique experience based on your interests. Guided tours include history notes and Japanese interpretation.</p>
+          </div>
+      </div>
+    <hr>
+        <table> <!-- #5 table -->
+            <thead>
+              <tr>
+                <th>Tour Operator</th>
+                <th>Contact</th>
+                <th>Price</th>
+                <th>Departing</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Unseen Japan Tours - Your unique guided experience of Japan</td>
+                <td>Elzhas Alinov</td>
+                <td>5000$</td>
+                <td rowspan="3">Jan-Dec 2023, 2024 & 2025</td> <!-- #6 -->
+              </tr>
+              <tr>
+                <td>The Japan Tour Company</td>
+                <td>Hayao Miyazaki</td>
+                <td>7000$</td>
+              </tr>
+              <tr>
+                <td>Authentic Ise Walking Tours by Shō</td>
+                <td>Kojima Hideo</td>
+                <td>6000$</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">Total operators: 3</td> <!-- #6 -->
+              </tr>
+            </tfoot>
+          </table>
+          <hr>
+          <form id="tourForm" action="" method="post">
+            <label for="tourOperators">Select a Tour Operator:</label>
+            <select id="tourOperators" name="tourOperator"></select>
+          
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+          
+            <label for="tel">Your Phone number:</label>
+            <input type="tel" id="tel" name="tel" required>
+          
+            <label for="tourDates">Select Tour Dates:</label>
+            <select id="tourDates" name="tourDates"></select>
+          
+            <label for="specialRequests">Any Special Requests:</label>
+            <textarea id="specialRequests" name="specialRequests"></textarea>
+          
+            <input type="submit" value="Submit">
+          </form>
+          
+        <hr>
+       </div>
+        <div class="footer-dark">
+          <footer>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-3 item">
+                          <h3>Interests</h3>
+                          <ul>
+                              <li><a href="file:///C:/Users/Administrator/.vscode/project%20iitu/Destinations.html">Destinations</a></li>
+                              <li><a href="file:///C:/Users/Administrator/.vscode/project%20iitu/Blog.html">Blog</a></li>
+                              <li><a href="file:///C:/Users/Administrator/.vscode/project%20iitu/Regions.html">Regions</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-sm-6 col-md-3 item">
+                          <h3>Information</h3>
+                          <ul>
+                              <li><a href="file:///C:/Users/Administrator/.vscode/project%20iitu/About.html">About us</a></li>
+                              <li><a href="file:///C:/Users/Administrator/.vscode/project%20iitu/Tours.html">Tours</a></li>
+                              <li><a href="file:///C:/Users/Administrator/.vscode/project%20iitu/Contact.html">Contact</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-md-6 item text">
+                          <h3>japan-travel.com</h3>
+                          <p>This web site exists since March 21, 1994. Our goal is to deliver comprehensive, up-to-date information on traveling in Japan, first-hand from Japan.</p>
+                      </div>
+                  </div>
+                  <p class="copyright">By Alinov Elzhas</p>
+                  <p class="copyright">Copyright © 1994-2023 japan-travel.com All Rights Reserved.</p>
+              </div>
+          </footer>
+      </div>
+            <script src="C:\Users\Administrator\.vscode\project iitu\js\Tours.js"></script>
+</body>
+</html>
