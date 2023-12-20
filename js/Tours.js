@@ -28,18 +28,15 @@ const fillSelectOptions = (selectId, dataArray) => {
 fillSelectOptions('tourOperators', tourOperatorsData);
 fillSelectOptions('tourDates', tourDatesData);
 
-// Обработчик события отправки формы
 document.getElementById('tourForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Предотвращаем стандартное поведение формы
+  event.preventDefault(); 
 
-  // Получаем значения из формы
   const tourOperator = document.getElementById('tourOperators').value;
   const name = document.getElementById('name').value;
   const tel = document.getElementById('tel').value;
   const tourDates = document.getElementById('tourDates').value;
   const specialRequests = document.getElementById('specialRequests').value;
 
-  // Действия с данными из формы
   console.log('Submitted Form Data:');
   console.log('Tour Operator:', tourOperator);
   console.log('Name:', name);

@@ -21,7 +21,6 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         firstName: document.getElementById('firstName').value,
         lastName: document.getElementById('lastName').value,
         email: document.getElementById('email').value
-        // Add other fields as needed
     };
 
     registeredUsers.push(userData);

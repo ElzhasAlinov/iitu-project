@@ -254,7 +254,7 @@ th{
 .team:hover img{
   transform: scale(1.1);
 }
-/* Form container styling */
+
 form {
   max-width: 400px;
   margin: 0 auto;
@@ -265,14 +265,12 @@ form {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Label styling */
 label {
   margin-bottom: 6px;
   display: block;
   font-weight: bold;
 }
 
-/* Input field styling */
 input[type="text"],
 input[type="tel"],
 textarea,
@@ -284,12 +282,10 @@ select {
   border-radius: 4px;
 }
 
-/* Radio button styling */
 input[type="radio"] {
   margin-right: 6px;
 }
 
-/* Submit button styling */
 input[type="submit"] {
   background-color: #15ff00;
   color: #fff;
