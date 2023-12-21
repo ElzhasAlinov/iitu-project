@@ -28,11 +28,15 @@ header.sticky{
 header.sticky ul li a{
     color:#000;
 }
+header.sticky .login-btn{
+  color:#000;
+}
 header ul{
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: right;
+    
 }
 header ul li{
     position:relative;
@@ -46,6 +50,20 @@ header ul li a{
     letter-spacing: 2px;
     font-weight: 500px;
     transition: 0.6s;
+}
+header .login-btn{
+  border:none;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background: none;
+  margin-left: 0;
+  color:#fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+button:hover {
+  background-color: #ff00003d;
 }
 a:link {
     text-decoration: none;
@@ -271,4 +289,5 @@ a:link {
 }
 #travelList{
   list-style: none;
+  color:crimson;
 }

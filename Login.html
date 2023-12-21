@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>japan-travel.com - Japan travel guide</title>
-    <link rel="stylesheet" href="C:\Users\Administrator\.vscode\project iitu\css\contact.css">
+    <link rel="stylesheet" href="C:\Users\Administrator\.vscode\project iitu\css\Login.css">
    <link rel="shortcut icon" href="C:\Users\Administrator\.vscode\project iitu\images\favicon (2).ico" type="image/x-icon">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -36,63 +36,34 @@
         <img src="C:\Users\Administrator\.vscode\project iitu\images\bbf3f0a6e095c7bd838efc6ebe36ecb6.jpg" alt="imgjapan" height="650px" class="imgjapan">
         </div>
         <div class="Contact">
-        <!-- Bootstrap form #15-->
-        <div class="row mt-4">
-            <div class="col-md-6">
-              <h2>Registration</h2>
-              <form id="registrationForm"> 
-                <div class="form-group">
-                  <label for="firstName">First Name</label>
-                  <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+            <div class="login-box">
+                <h2>Login</h2>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Email" autocomplete="off" required>
                 </div>
-                <div class="form-group">
-                  <label for="lastName">Last Name</label>
-                  <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="Password" autocomplete="off" required>
                 </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-              </div>
-                <div class="form-group">
-                  <label for="age">Age</label>
-                  <input type="number" class="form-control" id="age" placeholder="Enter your age">
+                <div class="forgot">
+                    <section>
+                        <input type="checkbox" id="check">
+                        <label for="check">Remember me</label>
+                    </section>
+                    <section>
+                        <a href="#">Forgot password</a>
+                    </section>
                 </div>
-                <div class="form-group">
-                  <label for="cityBirth">City of Birth</label>
-                  <input type="text" class="form-control" id="cityBirth" placeholder="Enter your city of birth">
+                <div class="input-submit">
+                    <button class="submit-btn" id="submit"></button>
+                    <label for="submit">Sign In</label>
                 </div>
-                <div class="form-group">
-                  <label for="region">Region</label>
-                  <input type="text" class="form-control" id="region" placeholder="Enter your region">
+                <div class="sign-up-link">
+                    <p>Don't have account? <a href="#">Sign Up</a></p>
+                    <p><a href="#">Log out</a></p>
                 </div>
-                <div class="form-group">
-                  <label for="country">Country</label>
-                  <input type="text" class="form-control" id="country" placeholder="Enter your country">
-                </div>
-                <div class="form-group">
-                  <label for="homeAddress">Home Address</label>
-                  <input type="text" class="form-control" id="homeAddress" placeholder="Enter your home address">
-                </div>
-                <div class="form-group">
-                  <label for="phoneNumber">Phone Number</label>
-                  <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter your phone number">
-                </div>
-                <div class="form-group">
-                  <button type="submit" class="btn btn-primary" id="registerBtn">Register</button>
-                    <button type="button" class="btn btn-secondary ml-2" onclick="clearForm()" id="btn-clear">Clear</button>
-                  </div>
-              </form>
             </div>
-          </div>
           <hr>
-          <h2>Our Contacts</h2>
-          <p class="lead">Manas street 34/1</p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1631.3662514792347!2d76.91213148769026!3d43.23540274822895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3883692f027581ad%3A0x2426740f56437e63!2z0JzQtdC20LTRg9C90LDRgNC-0LTQvdGL0Lkg0YPQvdC40LLQtdGA0YHQuNGC0LXRgiDQuNC90YTQvtGA0LzQsNGG0LjQvtC90L3Ri9GFINGC0LXRhdC90L7Qu9C-0LPQuNC5!5e0!3m2!1sru!2skz!4v1703194119615!5m2!1sru!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <hr>
-          <h2>Our call center</h2>
-          <p>+777 777 77 77</p>
-          <p class="lead">Opening hours of the Unified Call Center every day from 10:00 to 22:00</p>
-          <hr>
+          
         </div>  
 
       </div>
@@ -128,11 +99,9 @@
             </div>
         </footer>
     </div>
-            <script src="C:\Users\Administrator\.vscode\project iitu\js\Contact.js"></script>
+            <script src="C:\Users\Administrator\.vscode\project iitu\js\Login.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
-            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

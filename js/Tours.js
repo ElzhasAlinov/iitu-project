@@ -17,6 +17,7 @@ const tourDatesData = [
 
 const fillSelectOptions = (selectId, dataArray) => {
   const select = document.getElementById(selectId);
+
   dataArray.forEach(item => {
     const option = document.createElement('option');
     option.value = item;
@@ -28,14 +29,27 @@ const fillSelectOptions = (selectId, dataArray) => {
 fillSelectOptions('tourOperators', tourOperatorsData);
 fillSelectOptions('tourDates', tourDatesData);
 
-document.getElementById('tourForm').addEventListener('submit', function(event) {
-  event.preventDefault(); 
+
+ddocument.getElementById('tourForm').addEventListener('submit', function(event) {
+  event.preventDefault();
 
   const tourOperator = document.getElementById('tourOperators').value;
   const name = document.getElementById('name').value;
   const tel = document.getElementById('tel').value;
   const tourDates = document.getElementById('tourDates').value;
   const specialRequests = document.getElementById('specialRequests').value;
+
+  const emptyFields = [tourOperator, name, tel, tourDates].filter(field => !field);
+  if (emptyFields.length > 0) {
+    alert('Please fill in all required fields.');
+    return;
+  }
+
+  const isValidTel = tel.split('').reduce((acc, char) => acc && !isNaN(char), true);
+  if (!isValidTel) {
+    alert('Please enter a valid phone number.');
+    return;
+  }
 
   console.log('Submitted Form Data:');
   console.log('Tour Operator:', tourOperator);
